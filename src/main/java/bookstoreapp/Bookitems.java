@@ -2,6 +2,7 @@ package bookstoreapp;
 
 public class Bookitems {
 
+
 private String bookcategories;
 private String booktitle;
 private String bookauthor;

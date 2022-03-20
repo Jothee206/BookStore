@@ -6,15 +6,15 @@ public class BookitemsDAOTest {
 		// TODO Auto-generated method stub
 
 	Bookitems bookitems = new Bookitems();
-	bookitems.setBookcategories("categories");
-	bookitems.setBookauthor("authors");
-	bookitems.setBooktitle("titlename");
+	bookitems.setBookcategories("storybooks");
+	bookitems.setBookauthor("j.k.rowling");
+	bookitems.setBooktitle("harrypotter");
 	bookitems.setPrice(400);
 	
 	System.out.println(bookitems);
 			
-	BookitemsDAO bookitemsDAO = new BookitemsDAO();
-	bookitemsDAO.addBookitems(bookitems);
+	 BookitemsDAOImpl BookitemsDAOImpl = new BookitemsDAOImpl();
+	 BookitemsDAOImpl.addBookitems(bookitems);
 
 }
 }
