@@ -1,4 +1,4 @@
-package bookstoreapp;
+package bookstoreapp.main;
 
 public class User
 {
@@ -46,8 +46,8 @@ public String getMobilenumber() {
 }
 
 
-public void setMobilenumber(String Mobilenumber) {
-	this.mobilenumber = Mobilenumber;
+public void setMobilenumber(String mobileNumber) {
+	this.mobilenumber =mobileNumber;
 }
 
 @Override

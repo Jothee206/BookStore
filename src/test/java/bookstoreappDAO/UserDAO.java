@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 
-import bookstoreapp.User;
+import bookstoreapp.main.User;
 
 
 public class UserDAO {
@@ -24,8 +24,8 @@ public class UserDAO {
 		
 	String query="INSERT INTO bookstore_app (NAME,email,PASSWORD,mobile_number) VALUES(?,?,?,?)";
  
-	PreparedStatement statement=connection.prepareStatement(query);//purpose-if we use concatenation method in statement space occupied more so use prepared statemnt and get the values.
-		statement.setString(1,user.getName());
+	PreparedStatement  statement=connection.prepareStatement(query);//purpose-if we use concatenation method in statement space occupied more so use prepared statemnt and get the values.
+		 statement.setString(1,user.getName());
 		statement.setString(2,user.getEmail());
 		statement.setString(3,user.getPassword());
 		statement.setString(4,user.getMobilenumber());

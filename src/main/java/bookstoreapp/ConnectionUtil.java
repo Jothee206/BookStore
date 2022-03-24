@@ -1,3 +1,5 @@
+package bookstoreapp;
+
 import java.sql.Connection;
 
 public class ConnectionUtil {
@@ -8,4 +10,3 @@ public class ConnectionUtil {
 	}
 
 }
-

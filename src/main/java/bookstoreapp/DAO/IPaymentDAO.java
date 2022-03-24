@@ -1,4 +1,6 @@
-package bookstoreapp;
+package bookstoreapp.DAO;
+
+import bookstoreapp.main.Payment;
 
 public interface IPaymentDAO {
 

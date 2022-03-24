@@ -1,8 +1,10 @@
-package bookstoreapp;
+package bookstoreapp.validation;
+
+import bookstoreapp.main.Payment;
 
 public class PaymentValidation {
 
-	public static void paymentValidation(Payment bookpayment)throws Exception{
+	public static void Validation(Payment bookpayment)throws Exception{
 		if(bookpayment.getPrice()==0) {
 			throw new Exception("price cannot be null");//raise an problem
 		}

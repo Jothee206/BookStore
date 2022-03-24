@@ -1,4 +1,4 @@
-package bookstoreapp;
+package bookstoreapp.main;
 
 public class Payment {
 
