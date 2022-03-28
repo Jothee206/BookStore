@@ -45,15 +45,15 @@ public class BookitemsView {
 
 	}
 
-	public static List<Bookitems> bookcategories() throws SQLException, ClassNotFoundException {
+	public static List<Bookitems> bookcategories(String category) throws SQLException, ClassNotFoundException {
 		List<Bookitems> bookcategory = new ArrayList<Bookitems>();
 
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection connection = DriverManager.getConnection("jdbc:mysql://101.53.133.59:3306/revature_training_db",
 				"rev_user", "rev_user");
-		String sql = "select * from book_items where book_categories=?";
+		String sql = "SELECT id, book_categories,book_title,author_name,price FROM book_items WHERE book_categories=?";
 		PreparedStatement statement = connection.prepareStatement(sql);
-		statement.setString(1, "sciencefiction");
+		statement.setString(1, category);
         
 		// 3.execute query
 		ResultSet rs1 = statement.executeQuery();
@@ -79,4 +79,6 @@ public class BookitemsView {
 
 	}
 
+	
+	
 }

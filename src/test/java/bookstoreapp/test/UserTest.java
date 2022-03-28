@@ -12,17 +12,27 @@ public class UserTest {
 
 
 	public static void main(String[] args) throws Exception {
+items();
+	}
+	public static void items() throws Exception{
 	
 	
    Scanner sc = new Scanner(System.in);
+   
    System.out.println("Hii");
    System.out.println("welcome to bokmart");
+  
+   System.out.println("\t\tList the bookitems");
+   BookitemsViewTest.items();
+   System.out.println("\t\t\t\t\t\t");
+   System.out.println("\t\t go to registration page");
+	
    System.out.println("enter the username");
    String name= sc.next();
-   System.out.println("enter password");
-   String password=sc.next();
    System.out.println("enter email");
    String email=sc.next();
+   System.out.println("enter password");
+   String password=sc.next();
    System.out.println("enter mobilenumber");
    String mobilenumber = sc.next();
 
@@ -45,6 +55,8 @@ if (count==0) {
 	System.out.println("registration successful");
 	UserDAO.addBookstore1(user);
 	
+	   System.out.println("\t\t\t\t\t\t");
+	   
 	System.out.println("\t\tGo to login page");
 	UserLoginTest.items();
 	
@@ -52,16 +64,19 @@ if (count==0) {
 	BookitemsViewTest.items();
 	
 	System.out.println("\t\tDisplay by categories");
+	System.out.println("enter the category");
 	BookitemsViewTest.items1();
 	
 	System.out.println("\t\tOrder the book");
 	BookitemsOrderTest.items();
 	System.out.println("\t\tbooks ordered");
+	System.out.println("harrypotter");
 	
 	System.out.println("\t\tDisplay the payment details");
 	PaymentTest.items();
 
 	System.out.println("\t\tyour order is completed");
+	System.out.println("soon you will receive the order");
 	System.out.println("\t\tThank you");
 }
 	}

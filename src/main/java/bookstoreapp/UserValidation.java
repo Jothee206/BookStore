@@ -29,8 +29,6 @@ public class UserValidation {
 			
 				
 			
-			System.out.println("validation is successful");
-			
 		}
 		
 		}

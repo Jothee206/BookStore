@@ -40,7 +40,7 @@ public class BookitemsOrderTest {
 
 	
 	
-	System.out.println("validation successful");
+	
 	BookitemsOrderDAOImpl.addorder(bookitemsorder);
 	
 	

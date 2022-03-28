@@ -10,6 +10,7 @@ import java.util.List;
 import bookstoreapp.DAO.IUserLoginDAO;
 import bookstoreapp.main.UserLogin;
 
+
 public class UserLoginDAOImpl implements IUserLoginDAO {
 	public void Login(UserLogin userLogin) throws Exception{
 		
@@ -43,7 +44,8 @@ else if(userLogin.getUserPassword().equals(password)) {
 	System.out.println("Logging in successfully");
 }
 else {
-	throw new Exception("Invalid Credentials");
+
+
 }
 
 
@@ -56,13 +58,13 @@ connection.close();
 
 }
 
-	public void Login(bookstoreapp.DAO.UserLogin userlogin) throws Exception {
+	//public void Login(bookstoreapp.DAO.UserLogin userlogin) throws Exception {
 		// TODO Auto-generated method stub
 		
 	}
 
 	
-	}
+	
 
 	
 	

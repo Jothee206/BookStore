@@ -31,6 +31,7 @@ public class UserLoginTest {
 	       catch(Exception e) {
 	    	   System.out.println(e.getMessage());
 	    	   e.printStackTrace();
+	    	   UserLoginTest.items();
 	       }
 	}
 }
