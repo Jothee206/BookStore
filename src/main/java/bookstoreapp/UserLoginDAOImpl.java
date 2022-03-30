@@ -11,6 +11,8 @@ import bookstoreapp.DAO.IUserLoginDAO;
 import bookstoreapp.main.UserLogin;
 
 
+
+
 public class UserLoginDAOImpl implements IUserLoginDAO {
 	public void Login(UserLogin userLogin) throws Exception{
 		
@@ -42,12 +44,9 @@ if(mail==null) {
 }
 else if(userLogin.getUserPassword().equals(password)) {
 	System.out.println("Logging in successfully");
+	System.out.println("\t\tList the bookitems");
+		
 }
-else {
-
-
-}
-
 
 
 

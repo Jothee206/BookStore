@@ -21,10 +21,32 @@ import java.util.Scanner;
 	  
 	if(n==1) {
 		UserTest.items();
-		items();
+		
 	}
+	
 	else if(n==2) {
 		UserLoginTest.items();
+		BookitemsViewTest.items();
+		System.out.println("\t\tDisplay by categories");
+		BookitemsViewTest.items1();
+		BookitemsViewTest.items2();
+		
+		System.out.println("\t\t order the book");
+		BookitemsOrderTest.items();
+		
+		System.out.println("update the order");
+		UpdateBookitemsOrderTest.items();
+		
+		System.out.println("\t\t Enter customer details");
+		CustomerDetailsTest.items();
+		
+		
+		System.out.println("\t\tDisplay the payment details");
+		PaymentTest.items();
+
+		System.out.println("\t\tyour order is completed");
+		System.out.println("soon you will receive the order");
+		System.out.println("\t\tThank you");
 	}
 	else {
 		System.out.println("exit");

@@ -24,7 +24,7 @@ public class UserLoginTest {
 	       userlogin.setUserPassword(userPassword);
 
 	      // UserLoginDAOImpl userloginDaoImpl=new UserLoginDAOImpl();
-	       try {
+	       try {                                                              //exception handling
 	       UserLoginDAOImpl userLoginDAOImpl = new UserLoginDAOImpl();
 		userLoginDAOImpl.Login(userlogin);
 	       }
@@ -32,6 +32,7 @@ public class UserLoginTest {
 	    	   System.out.println(e.getMessage());
 	    	   e.printStackTrace();
 	    	   UserLoginTest.items();
+	    	   
 	       }
 	}
 }

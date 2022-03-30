@@ -9,16 +9,18 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import bookstoreapp.ConnectionUtil;
 import bookstoreapp.main.Bookitems;
 
 public class BookitemsView {
 
 	public static List<Bookitems> showAll() throws SQLException, ClassNotFoundException {
 		List<Bookitems> books = new ArrayList<Bookitems>();
-		String sql = "select * from book_items";
+		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection connection = DriverManager.getConnection("jdbc:mysql://101.53.133.59:3306/revature_training_db",
 				"rev_user", "rev_user");
+		String sql = "select * from book_items";
 		Statement statement = connection.prepareStatement(sql);
 
 		// 3.execute query
@@ -45,7 +47,7 @@ public class BookitemsView {
 
 	}
 
-	public static List<Bookitems> bookcategories(String category) throws SQLException, ClassNotFoundException {
+	public static List<Bookitems> bookcategories(String category) throws Exception {
 		List<Bookitems> bookcategory = new ArrayList<Bookitems>();
 
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -71,6 +73,7 @@ public class BookitemsView {
 			bookitemsviewobj.setBooktitle(booktitle);
 			bookitemsviewobj.setAuthorname(authorname);
 			bookitemsviewobj.setPrice(price);
+			
 			// store row details in list
 			bookcategory.add(bookitemsviewobj);
 		}
@@ -80,5 +83,43 @@ public class BookitemsView {
 	}
 
 	
+
 	
-}
+	
+	public static List authorname(String authorname) throws Exception  {
+		List<Bookitems> authorname1 = new ArrayList<Bookitems>();
+
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection connection = DriverManager.getConnection("jdbc:mysql://101.53.133.59:3306/revature_training_db",
+				"rev_user", "rev_user");
+		String sql = "SELECT id, book_categories,book_title,author_name,price FROM book_items WHERE author_name=?";
+		PreparedStatement statement = connection.prepareStatement(sql);
+		statement.setString(1, authorname);
+        
+		// 3.execute query
+		ResultSet rs1 = statement.executeQuery();
+		// iterate rows
+
+		while (rs1.next()) {
+
+			Integer id = rs1.getInt("id");
+			String bookcategories1 = rs1.getString("book_categories");
+			String booktitle = rs1.getString("book_title");
+			String authorname11 = rs1.getString("author_name");
+			String price = rs1.getString("price");
+			Bookitems bookitems = new Bookitems();
+			bookitems.setBookcategories(bookcategories1);
+			bookitems.setBooktitle(booktitle);
+			bookitems.setAuthorname(authorname11);
+			bookitems.setPrice(price);
+			
+			// store row details in list
+			authorname1.add(bookitems);
+		}
+
+		return authorname1;
+
+	}}
+	
+
+	

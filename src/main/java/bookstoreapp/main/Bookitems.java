@@ -38,10 +38,6 @@ public class Bookitems {
 	public String toString() {
 		return "items[bookcategories=" + bookcategories + ", booktitle=" + booktitle + ", authorname=" + authorname +", price="
 				+ price+"]";
-	}
-	public static List<Bookitems> showAll() {
-		return null;
-		// TODO Auto-generated method stub
 		
 	
 	

@@ -22,9 +22,9 @@ items();
    System.out.println("Hii");
    System.out.println("welcome to bokmart");
   
-   System.out.println("\t\tList the bookitems");
+  /* System.out.println("\t\tList the bookitems");
    BookitemsViewTest.items();
-   System.out.println("\t\t\t\t\t\t");
+   System.out.println("\t\t\t\t\t\t");*/
    System.out.println("\t\t go to registration page");
 	
    System.out.println("enter the username");
@@ -42,6 +42,7 @@ items();
    user.setEmail(email);
    user.setMobilenumber(mobilenumber);
    
+   
    int count=0;
    try {
 	   UserValidation.Registrationvalidation(user);
@@ -49,9 +50,10 @@ items();
    catch(Exception e) {
 	   System.out.println(e.getMessage());
 	   System.out.println("invalid registration");
-	   
+	 UserTest.items();
    }
 if (count==0) {
+	
 	System.out.println("registration successful");
 	UserDAO.addBookstore1(user);
 	
@@ -64,13 +66,18 @@ if (count==0) {
 	BookitemsViewTest.items();
 	
 	System.out.println("\t\tDisplay by categories");
-	System.out.println("enter the category");
 	BookitemsViewTest.items1();
+	BookitemsViewTest.items2();
 	
-	System.out.println("\t\tOrder the book");
+	System.out.println("\t\t order the book");
 	BookitemsOrderTest.items();
-	System.out.println("\t\tbooks ordered");
-	System.out.println("harrypotter");
+	
+	//System.out.println("update the order");
+	//UpdateBookitemsOrderTest.items();
+	
+	System.out.println("\t\t Enter customer details");
+	CustomerDetailsTest.items();
+	
 	
 	System.out.println("\t\tDisplay the payment details");
 	PaymentTest.items();
