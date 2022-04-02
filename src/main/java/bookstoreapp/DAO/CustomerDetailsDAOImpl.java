@@ -16,10 +16,7 @@ public static void adddetails(CustomerDetails customerdetails ) throws Exception
 	
 	try{
 		//database driver
-	Class.forName("com.mysql.cj.jdbc.Driver");
-	//get the connection
-	connection = DriverManager.getConnection("jdbc:mysql://101.53.133.59:3306/revature_training_db", "rev_user",
-			"rev_user");
+		connection=ConnectionUtil.databaseConnection();
 	//insert query
 	String query ="INSERT INTO customer_details(customer_Name,contact_Number,address,city,price,booktitle,total_amount) VALUES (?,?,?,?,?,?,?)";
 	statement = connection.prepareStatement(query);
@@ -36,11 +33,6 @@ public static void adddetails(CustomerDetails customerdetails ) throws Exception
 
 	int row=statement.executeUpdate();
 	System.out.println("No of rows inserted:"+row);
-} catch (ClassNotFoundException e) {
-
-	e.printStackTrace();
-	throw new Exception(e.getMessage(), e);
-
 } finally {
 	if (statement != null) {
 		statement.close();
@@ -56,17 +48,17 @@ public static void adddetails(CustomerDetails customerdetails ) throws Exception
 connection.close();
 }
 
-
-
-
-
-
-
 public void addBookitemsorder(CustomerDetails customerdetails) throws Exception {
 	// TODO Auto-generated method stub
 	
-}
-}
+}}
+
+
+
+
+
+
+
 
 
 

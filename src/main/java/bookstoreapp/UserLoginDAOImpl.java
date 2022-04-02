@@ -6,19 +6,15 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-
 import bookstoreapp.DAO.IUserLoginDAO;
 import bookstoreapp.main.UserLogin;
-
-
-
 
 public class UserLoginDAOImpl implements IUserLoginDAO {
 	public void Login(UserLogin userLogin) throws Exception{
 		
-		Class.forName("com.mysql.cj.jdbc.Driver");
+Class.forName("com.mysql.cj.jdbc.Driver");
 		//get the connection
-		Connection connection = DriverManager.getConnection("jdbc:mysql://101.53.133.59:3306/revature_training_db", "rev_user",
+Connection connection = DriverManager.getConnection("jdbc:mysql://101.53.133.59:3306/revature_training_db", "rev_user",
 				"rev_user");
 	//insert the query
 String query = "select email,password from bookstore_app where email=? ";
@@ -54,24 +50,9 @@ statement.close();
 connection.close();
 
 
-
 }
 
-	//public void Login(bookstoreapp.DAO.UserLogin userlogin) throws Exception {
-		// TODO Auto-generated method stub
-		
-	}
+		}
 
 	
 	
-
-	
-	
-
-	
-	
-
-	
-	
-
-
