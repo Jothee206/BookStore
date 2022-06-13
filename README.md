@@ -1,13 +1,33 @@
- ChocoShop-Core-java
-Choco Shop
+          Book store-Core java
+       
+    It is an application which is useful for buying different kinds of books.Based on differene categories there are many books available with low cost.
+    
+    Technologies used:
+            Java,Maven,MySQL,Git.
+            
+     FEATURES:
+     
+     Module1:Homepage
+           *Home page for displaying(completed)
 
-The kind of Shop app is a console-based application that facilitates the purchasing of chocolates, the choice is up to you. An employee can add a variety of chocolates to an inventory and manage offers for those items while a customer can view the available items and make offers. Purpose We want to see that you can meet deadlines and that you can code.
+     Module2:user
+          *user Registration(completed)
+           *user Login(completed)
 
-Technologies Used:
+     Module3:View
+          *view of Book items(completed)
+          *search by categories(completed)
+          *search by author name(in completed)
 
-Java Maven, MySQL, Git
+     Module4:order
+         *user can order a book(completed)
+    
+     Module5:payment
+          *user can see amount details(completed)
+          *user can see payment options.
+          *user can pay the money and get the product.
+          
+          These were the modules which the project holds.
+       
+     User can login the application and search for book with help of categories and author. Then user can  buy the book.
 
-Features:
-
-User can buy any chocolates in the inventory with various offers, update their profile, view transactions. Admin can add/delete/update the chocolates list and view the user details and transactions as well as can make different offers.
-   
