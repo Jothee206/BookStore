@@ -18,11 +18,14 @@
           *view of Book items(completed)
           *search by categories(completed)
           *search by author name(in completed)
+        
+     Module4:Insert
+          *Insert the book items(completed)
 
-     Module4:order
+     Module5:order
          *user can order a book(completed)
     
-     Module5:payment
+     Module6:payment
           *user can see amount details(completed)
           *user can see payment options.
           *user can pay the money and get the product.
