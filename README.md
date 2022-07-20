@@ -1,38 +1,39 @@
-          Book store-Core java
+       BOOK STORE APP
        
-    It is an application which is useful for buying different kinds of books.Based on differene categories there are many books available with low cost.
+    Project Description:
     
+         Online Book Store Project is a web-based application in Java, developed mainly for bookstores and shops to computerize the book purchasing process. 
+  This  project aims at creating an efficient and reliable online bookselling and buying platform. After the implementation of the project, one can inquire and buy any   book available in the store from anywhere.
+         
     Technologies used:
-            Java,Maven,MySQL,Git.
+            Java
+            Maven
+            MySQL
+            Git
             
-     FEATURES:
-     
-     Module1:Homepage
-           *Home page for displaying(completed)
-
-     Module2:user
-          *user Registration(completed)
-           *user Login(completed)
-
-     Module3:View
-          *view of Book items(completed)
-          *search by categories(completed)
-          *search by author name(in completed)
-        
-     Module4:Insert
-          *Insert the book items(completed)
-
-     Module5:order
-         *user can order a book(completed)
-    
-     Module6:payment
-          *user can see amount details(completed)
-          *user can see payment options.
-          *user can pay the money and get the product.
+            
+    FEATURES:
+         
+         * Home page for displaying the app.
+         * User can Register into the app.
+         * User  can Login.
+         * User can view the book items.
+         * User can search the book by Categories.
+         * User can search by author name.
+         * Admin can Insert the book items.
+         * User can order a book.
+         * User can see amount details.
+         * User can see payment options.
+         * User can pay the money and get the product.
           
           These were the modules which the project holds.
+        User can login the application and search for book with help of categories and author. Then user can  buy the book.
+        
+    To-do list:
        
-     User can login the application and search for book with help of categories and author. Then user can  buy the book.
+        * User can return the book if the product was not satisfied.
+        
+      
      
  Getting Started:
 
